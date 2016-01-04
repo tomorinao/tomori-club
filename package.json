@@ -1,0 +1,29 @@
+{
+  "name": "tomori-club",
+  "version": "1.0.0",
+  "description": "We are Tomori Nao!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomorinao/tomori-club.git"
+  },
+  "keywords": [
+    "tomorinao"
+  ],
+  "author": "TomoriNao",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/tomorinao/tomori-club/issues"
+  },
+  "homepage": "https://github.com/tomorinao/tomori-club#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "passport": "^0.3.2",
+    "passport-twitter": "^1.0.3",
+    "sqlite3": "^3.1.1"
+  }
+}
