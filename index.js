@@ -37,7 +37,7 @@ function(token, tokenSecret, profile, done) {
 	if (profile.displayName.match(/友利奈緒/)) {
 		db.serialize(function() {
 			db.run("INSERT or REPLACE INTO TomoriNao (id, username, displayName, icon) VALUES (?, ?, ?, ?)",
-				[ profile.id, profile.username, profile.displayName, profile.photos[0].value.replace('_normal','') ]);
+				[ profile.id, profile.username, profile.displayName, profile.photos[0].value.replace('_normal','_bigger') ]);
 		})
 	} else {
 		db.serialize(function() {
