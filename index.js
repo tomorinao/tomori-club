@@ -14,7 +14,7 @@ passport.deserializeUser(function(obj, done) {
 
 var db = new sqlite3.Database('./tomorinao.db');
 db.serialize(function() {
-  db.run("CREATE TABLE if not exists TomoriNao (id INTEGER, username TEXT, displayName TEXT, icon TEXT)")
+  db.run("CREATE TABLE if not exists TomoriNao (id INTEGER PRIMARY KEY, username TEXT, displayName TEXT, icon TEXT)")
 })
 
 var app = express();
